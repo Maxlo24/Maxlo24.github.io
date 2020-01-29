@@ -4697,3 +4697,7 @@ input, select, textarea {
 		right: 40px;
 		border: none;
 	}
+
+	.Hlink {
+		color: #18bfef;
+	}
