@@ -2209,9 +2209,8 @@ input, select, textarea {
 	.button {
 		background-color: transparent;
 		box-shadow: inset 0 0 0 2px #212931;
-		color: #212931 !important;
+		color: #909090 !important;
 	}
-
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
@@ -4671,7 +4670,6 @@ input, select, textarea {
 			#navPanel {
 				padding: 2.5rem 1.75rem;
 			}
-
 		}
 
 	@media screen and (max-width: 980px) {
@@ -4688,5 +4686,14 @@ input, select, textarea {
 			box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
 			visibility: visible;
 		}
+		
 
+	}
+
+	#BtnHautPage {
+		z-index: 1001;
+		position: fixed;
+		bottom: 0px;
+		right: 40px;
+		border: none;
 	}
