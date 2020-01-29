@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>IA_Projet</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Mes projets</a></li>
+							<li><a href="aPropos.html">A propos</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/maxime-gillot-6b0920179/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/Maxlo24" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.instagram.com/maxime_gt69" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						</ul>
+					</nav>
+
+					<!-- <ul class="actions">
+						<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+					</ul> -->
+
+					<div id="BtnHautPage">
+						<a href="#main" class="button icon solid solo fa-arrow-up scrolly">Continue</a>
+					</div>
+					
+
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">2018 - 2019</span>
+									<h1>Intelligence <br> artificielle</h1>
+									<p>J'ai toujours été intrigué par le theme de l'<b>intelligence artificielle</b>. C'est en 2018 que j'ai décidé de me lancer dans un projet : <br>
+										coder une IA qui serait capable d'<b>apprendre à conduire</b> dans un environnement virtuel.
+									</p>
+                                </header>
+                                
+                                
+								<p>J'ai ainsi découvert l'éxistance des <a href="#AlgoGen" class="scrolly"><b> algorithmes génétiques</b></a>.<br>
+									J'ai appris à m'en servir pour entrainer des réseaux de neurones à effectuer les taches suivantes. <br>
+									• <a href="#IA1" class="scrolly">"Apprendre" à conduire</a><br>
+									• <a href="#IA2" class="scrolly">"Apprendre" à tirer à l'arc</a><br>
+								</p> 
+								<p>Les IA ont été codées dans le moteur graphique <a href="https://unity.com/fr"><b>Unity 3D</b></a> en language <b>C#</b></p>
+								<br>
+
+                                <header class="major">
+                                    <a id="AlgoGen"></a>
+									<span class="date">Algorithme génétique</span>
+									<h2>Algorythme</h2><h2>génétique</h2>
+									<p>J'ai d'abbord codé mon premier algorithme génétique en <b>Python</b>. L'objectif était de résoudre le problème du voyageur de commerce : <br>
+										• Déterminer le  chemin le plus court qui visite chaque ville une et une seule fois <br> et qui termine dans la ville de départ.
+									</p>
+								</header>
+								
+								<div class="image main"><img src="images/IA/ExplicationAlgoGen.jpg" alt="Image de robot" /></div>
+
+								<p>
+										• Le <b>bloc (A)</b> représente l'avancement de l'algorithme à différents moments clefs.
+										<br>
+										On commence d’abord par créer un nuage de point : 15 points disposés aléatoirement sur une grille de 10x10 pixels.
+										L'algorithme génétique commence par la création d'une population de départ, ici une population de 100 trajets.
+										<br><br>
+										• Le <b>bloc (B)</b> correspond à la description de ces trajets. Ils sont tous caractérisés par une liste de points dont l'ordre est donné de manière aléatoire . Cette liste de points correspond à l'ADN d'un trajet.
+										<br>
+										Pour coller à la  <b>théorie de l'évolution de Charles Darwin</b>, il faut maintenant procéder à une <b>sélection</b> naturelle. Pour cela, on classe les trajets en fonction de leur longueur. Plus le trajet est court, plus celui-ci sera haut dans le classement. 
+										<br>
+										Maintenant que toute notre population de départ est classée, on sélectionne les 25 meilleurs trajets. Pour plus de diversité, et encore une fois en s’inspirant de la nature, on sélectionne également 25 chanceux. Ces 25+25 sélectionnés vont maintenant pouvoir se «reproduire».
+										<br><br>
+										• Le <b>bloc (C)</b> représente la <b>reproduction</b>  qui consiste à choisir deux «sélectionnés» (un père et une mère) et de mélanger leur ADN pour donner 4 nouveaux trajets (4 enfants). 
+										L'objectif est de conserver une population constante (ici de 100). On ajoute finalement une légère <b>mutation</b> à l'ADN des "enfants".
+										<br><br>
+										Ce processus de sélection/reproduction est répèté jusqu'à ce qu'il n'y ait plus de progression.
+								</p>
+								<br><br><br>
+								
+							
+								
+                                <header class="major">
+                                        <a id="IA1"></a>
+                                        <span class="date">IA 1</span>
+                                        <h2>Apprendre à </h2><h2> conduire</h2>
+                                        <p>Quelques exemples :</p>
+                                </header>
+                                <div class="image main"><img src="images/IA/ExplicationAlgoGen.jpg" alt="Image de roue omnidirectionnelle" /><p>Modélisé d'une roue omnidirectionnelle - 2017<br> en vue de participer aux olympiades de science de l'ingénieur de la même année</p></div>
+
+                                <header class="major">
+                                        <a id="IA2"></a>
+                                        <span class="date">IA 2</span>
+                                        <h2>Apprendre à</h2><h2>tirer à l'arc</h2>
+                                        <p>Quelques exemples :</p>
+                                </header>
+                                <div class="image main"><img src="images/IA/ExplicationAlgoGen.jpg" alt="Image d'une plante carnivore de Mario" /><p>Modélisé d'une d'une plante carnivore de Mario - 2017 </p></div>
+                            
+                            </section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/maxime-gillot-6b0920179/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/Maxlo24" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+					<header id="header">
+						<a href="index.html" class="logo">portfolio</a>
+					</header>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Maxime GILLOT</li><li>CSS & JS: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
