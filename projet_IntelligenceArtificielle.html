@@ -61,8 +61,8 @@
 								
 								<p>J'ai ainsi découvert l'éxistance des <a href="#AlgoGen" class="scrolly"><b> algorithmes génétiques</b></a>.<br>
 									J'ai appris à m'en servir pour entrainer des réseaux de neurones à effectuer les taches suivantes. <br>
-									• <a href="#IA1" class="scrolly">"Apprendre" à conduire</a><br>
 									• <a href="#IA2" class="scrolly">"Apprendre" à tirer à l'arc</a><br>
+									• <a href="#IA1" class="scrolly">"Apprendre" à conduire</a><br>
 								</p> 
 								<p>Les IA ont été codées dans le moteur graphique <a href="https://unity.com/fr"><b class="Hlink">Unity 3D</b></a> en language <b>C#</b>.</p>
 								<br>
@@ -103,16 +103,67 @@
 								</p>
 								<br><br><br>
 								
+								<!-- IA apprend a tirer a l'arc  -->
+
+                                <header class="major">
+                                        <a id="IA2"></a>
+                                        <span class="date">IA 1</span>
+                                        <h2>Apprendre à</h2><h2>tirer à l'arc</h2>
+                                        <p>Captures d'écran du projet sur <a href="https://unity.com/fr"><b class="Hlink">Unity 3D</b></a> :</p>
+								</header>
+								<p>L'objectif était d'apprendre le tir à l'arc à une IA. <br>
+									Je voulais qu'elle atteigne toujours sa cible de 10m à 80m. Peu importe la force et la direction du vent.
+								</p>
+								<header class="major">
+									<h3>Environnement</h3>
+                                	<div class="image main"><div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/388463793?byline=0&portrait=0&loop=1&autoplay=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script><p>Modélisation et controle du robot archer</p></div>
+									<div class="image main"><img src="images/IA/arcEnvironement.jpg" alt="Image environnement archer"/><p>Modélisation de l'environnement dans Unity</p></div>
+								</header>
+
 								
+								<p>
+									Le robot est muni d'un Réseau de neurones semblable à celui-ci :
+									<img src="images/IA/NeuralNetwork.jpg" alt="Neural Network"><br>
+									<b>Description des entrées :</b> <br>
+									• <b>x1</b>  : correspond à la position suivant l'axe x de la cible<br>
+									• <b>x2</b> : correspond à la position suivant l'axe y de la cible<br>
+									• <b>x3</b> : correspond à la force du vent suivant l'axe x<br>
+									• <b>x4</b> : correspond à la force du vent suivant l'axe y<br><br>
+									<b>Description des sorties :</b> <br>
+									• <b>y1</b> : Rotation verticale de l'arc<br>
+									• <b>y2</b> : Rotation Horizontale de l'arc<br>
+									• <b>y3</b> : Puissance du tire<br>
+								</p>
+								<p>Nous allons entrainer ce réseau de neuron en suivant le même principe que celui présenté dans la rubrique <a href="#AlgoGen" class="scrolly"><b> algorithmes génétiques</b></a>.</p>
+								<br>
+								<header class="major">
+									<h3>Résultats</h3>
+								</header>
+
+								<div class="image main"><img src="images/IA/Arc1gen1.jpg" alt="Image environnement archer"/><p>Première génération. <br> Les tirs sont totalement aléatoires</p></div>
+								<div class="image main"><img src="images/IA/Arc1gen5.jpg" alt="Image environnement archer"/><p>Après 5 générations <br> On observe une concentration des tirs</p></div>
+								<div class="image main"><img src="images/IA/Arc1gen25.jpg" alt="Image environnement archer"/><p>Après 25 générations <br>Certains réseaux de neurones obtiennent des résultats satisfaisant et atteignent la cible.</p></div>
+
+								<p>L'expérience à ensuite étée réalisée avec des cibles positionnées aléatoirement. Les résultats ne sont pas encore suffisament concluent. <br>
+									La puissance de calcul dont je dispose n'est pas suffisante pour une progression efficace sur ce projet.
+								</p><br><br><br>
 								<!-- IA apprend a conduire  -->
 
                                 <header class="major">
                                         <a id="IA1"></a>
-                                        <span class="date">IA 1</span>
+                                        <span class="date">IA 2</span>
                                         <h2>Apprendre à </h2><h2> conduire</h2>
                                         <p>Extrait d'une présentation du projet :</p>
-                                </header>
-								<div class="image main"><img src="images/IA/Environement.jpg" alt="Image de roue omnidirectionnelle" /></div>
+								</header>
+								<p>L'objectif était d'apprendre à une IA à completer un circuit le plus rapidement possible sans percuter l'environnement. <br>
+									Je voulais voir s'il etait envisageable d'utiliser une IA pour trouver la trajectoir optimum.
+								</p><br><br>
+
+								<header class="major">
+									<h3>Environnement</h3>
+									<div class="image main"><img src="images/IA/Environement.jpg" alt="Image de l'environnement" /></div>
+								</header>
+
 								<p>
 									J'ai d'abord codé dans Unity une scène dans laquelle il est possible de <b>dessiner le circuit</b> que l'on veut. <br>
 									Le circuit doit au minimum comporter : <br>
@@ -121,7 +172,12 @@
 									• des CheckPoints (le dernier CheckPoint correspond à l'arrivée) <br>
 								</p><br><br>
 
-								<div class="image main"><img src="images/IA/CarCreation.jpg" alt="Image de roue omnidirectionnelle" /></div>
+								<header class="major">
+									<h3>Réseau de neurones</h3>
+									<div class="image main"><img src="images/IA/CarCreation.jpg" alt="Image de roue omnidirectionnelle" /></div>
+
+								</header>
+
 								<p>
 									J'ai ensuite codé une 2ème scène dans laquelle on peut créer son véhicule <br> mais surtout <b>dimmentionner le réseau de neurones</b> (RN) associé. <br>
 									On peut choisir : <br>
@@ -130,7 +186,10 @@
 									• le <b>nombre de neurones par couche cachée</b>  (1 - 5) <br>
 								</p><br><br>
 
-								<div class="image main"><img src="images/IA/Learning.jpg" alt="Image de roue omnidirectionnelle" /></div>
+								<header class="major">
+									<h3>Algorithme génétique</h3>
+									<div class="image main"><img src="images/IA/Learning.jpg" alt="Image de roue omnidirectionnelle" /></div>
+								</header>
 								<p>
 									Il est maintenant temps de coder la partie "apprentissage" en utilisant un <b>algorithme génétique</b>:<br><br>
 
@@ -145,7 +204,12 @@
 									<i>(Ps: sur la photo au centre de la diapositive, les traits rouges correspondent aux capteurs des voitures)</i> 
 								</p><br><br>
 
-								<div class="image main"><img src="images/IA/Result.jpg" alt="Image de roue omnidirectionnelle" /></div>
+								<header class="major">
+										<h3>Résultats</h3>
+										<div class="image main"><img src="images/IA/Result.jpg" alt="Image de roue omnidirectionnelle" /></div>
+
+								</header>
+
 								<p>
 									Nous pouvons observer ci-dessus l'évolution de l'IA après 100 générations. <br>
 									Une grande partie des voitures arrivent au bout du circuit et certaines bien plus rapidement que d'autres. <br>
@@ -158,16 +222,6 @@
 								</p><br><br><br>
 
 
-								<!-- IA apprend a tirer a l'arc  -->
-
-                                <header class="major">
-                                        <a id="IA2"></a>
-                                        <span class="date">IA 2</span>
-                                        <h2>Apprendre à</h2><h2>tirer à l'arc</h2>
-                                        <p>Quelques exemples :</p>
-                                </header>
-                                <div class="image main"><img src="images/IA/ExplicationAlgoGen.jpg" alt="Image d'une plante carnivore de Mario" /><p>Modélisé d'une d'une plante carnivore de Mario - 2017 </p></div>
-                            
                             </section>
 
 					</div>
