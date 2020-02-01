@@ -4701,11 +4701,3 @@ input, select, textarea {
 	.Hlink {
 		color: #18bfef;
 	}
-
-	.slides{
-		/* width: calc(); */
-	}
-
-	.slide{
-		float:left;
-	}

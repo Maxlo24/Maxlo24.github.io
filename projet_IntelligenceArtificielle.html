@@ -67,17 +67,14 @@
 								<p>Les IA ont été codées dans le moteur graphique <a href="https://unity.com/fr"><b class="Hlink">Unity 3D</b></a> en language <b>C#</b>.</p>
 								<br>
 
-
-
 								<!-- Algorithme Genetique -->
-
 
                                 <header class="major">
                                     <a id="AlgoGen"></a>
 									<span class="date">Algorithme génétique</span>
 									<h2>Algorithme</h2><h2>génétique</h2>
-									<p>J'ai d'abbord codé mon premier algorithme génétique en <b>Python</b>. L'objectif était de résoudre le problème du voyageur de commerce : <br>
-										• Déterminer le  chemin le plus court qui visite chaque ville une et une seule fois <br> et qui termine dans la ville de départ.
+									<p>J'ai d'abord codé mon premier algorithme génétique en <b>Python</b>. L'objectif était de résoudre le problème du voyageur de commerce : <br>
+										• Déterminer le  chemin le plus court qui visite chaque ville une seule fois <br> et qui termine dans la ville de départ.
 									</p>
 								</header>
 								
@@ -87,7 +84,7 @@
 								<p>
 									• Le <b>bloc (A)</b> représente l'avancement de l'algorithme à différents moments clefs.
 									<br>
-									On commence d’abord par créer un nuage de point : 15 points disposés aléatoirement sur une grille de 10x10 pixels.
+									On commence d’abord par créer un nuage de points : 15 points disposés aléatoirement sur une grille de 10x10 pixels.
 									L'algorithme génétique commence par la création d'une population de départ, ici une population de 100 trajets.
 									<br><br>
 									• Le <b>bloc (B)</b> correspond à la description de ces trajets. Ils sont tous caractérisés par une liste de points dont l'ordre est donné de manière aléatoire . Cette liste de points correspond à l'ADN d'un trajet.
@@ -119,7 +116,6 @@
                                 	<div class="image main"><div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/388463793?byline=0&portrait=0&loop=1&autoplay=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script><p>Modélisation et controle du robot archer</p></div>
 									<div class="image main"><img src="images/IA/arcEnvironement.jpg" alt="Image environnement archer"/><p>Modélisation de l'environnement dans Unity</p></div>
 								</header>
-
 								
 								<p>
 									Le robot est muni d'un Réseau de neurones semblable à celui-ci :
@@ -134,7 +130,7 @@
 									• <b>y2</b> : Rotation Horizontale de l'arc<br>
 									• <b>y3</b> : Puissance du tire<br>
 								</p>
-								<p>Nous allons entrainer ce réseau de neuron en suivant le même principe que celui présenté dans la rubrique <a href="#AlgoGen" class="scrolly"><b> algorithmes génétiques</b></a>.</p>
+								<p>Nous allons entrainer ce réseau de neurones en suivant le même principe que celui présenté dans la rubrique <a href="#AlgoGen" class="scrolly"><b> algorithmes génétiques</b></a>.</p>
 								<br>
 								<header class="major">
 									<h3>Résultats</h3>
@@ -156,7 +152,7 @@
                                         <p>Extrait d'une présentation du projet :</p>
 								</header>
 								<p>L'objectif était d'apprendre à une IA à completer un circuit le plus rapidement possible sans percuter l'environnement. <br>
-									Je voulais voir s'il etait envisageable d'utiliser une IA pour trouver la trajectoir optimum.
+									Je voulais voir s'il etait envisageable d'utiliser une IA pour trouver la trajectoire optimale.
 								</p><br><br>
 
 								<header class="major">
@@ -179,7 +175,7 @@
 								</header>
 
 								<p>
-									J'ai ensuite codé une 2ème scène dans laquelle on peut créer son véhicule <br> mais surtout <b>dimmentionner le réseau de neurones</b> (RN) associé. <br>
+									J'ai ensuite codé une 2ème scène dans laquelle on peut créer son véhicule <br> mais surtout <b>dimensionner le réseau de neurones</b> (RN) associé. <br>
 									On peut choisir : <br>
 									• le <b>nombre d'inputs</b>  (1 - 6). Ce sont les capteurs de distance du véhicule <br>
 									• le <b>nombre de couches cachées</b>  (0 - 3). Ce sont des couches de neurones entre l'entrée et la sortie du RN <br>
@@ -191,13 +187,13 @@
 									<div class="image main"><img src="images/IA/Learning.jpg" alt="Image de roue omnidirectionnelle" /></div>
 								</header>
 								<p>
-									Il est maintenant temps de coder la partie "apprentissage" en utilisant un <b>algorithme génétique</b>:<br><br>
-
+									Il est maintenant temps de coder la partie "apprentissage" en utilisant un <b>algorithme génétique</b>:<br>
+									<br>
 									• Notre population de départ est composée de 100 voitures munies de leur réseau de neurones. <br>
 									Elles sont toutes envoyées sur le circuit où elles essayent d'aller le plus loin possible. <br>
 									Une fois qu'elles ont toutes, soit complété le circuit, soit percuté un mur, elles sont classées par leur score. <br>
-									(le score est calculé en fonction du temps et de la distance parcourue). <br> <br>
-
+									(le score est calculé en fonction du temps et de la distance parcourue). <br> 
+									<br>
 									• Nous pouvons maintenant procéder à la <b>sélection</b>, la <b>reproduction</b>  et la <b>mutation</b>
 									 en suivant le même principe que celui présenté dans la rubrique <a href="#AlgoGen" class="scrolly"><b> algorithmes génétiques</b></a> <br>
 									<br>
@@ -217,10 +213,8 @@
 									<b>Observations</b> : Il est possible de sauvegarder les valeurs du RN de la meilleure voiture. <br>
 									Lorsque l'on pose cette voiture dans un nouveau circuit qui lui est totalement inconnu, elle arrive sans aucun problème au bout de celui-ci. <br>
 									<br>
-									<b>D'un certaine façon la voiture à bien "appris" à conduire.</b>
-		
+									<b>D'un certaine façon la voiture à bien "appris" à conduire.</b>		
 								</p><br><br><br>
-
 
                             </section>
 
@@ -265,7 +259,6 @@
 					<div id="copyright">
 						<ul><li>&copy; Maxime GILLOT</li><li>CSS & JS: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
-
 			</div>
 
 		<!-- Scripts -->
@@ -276,6 +269,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
