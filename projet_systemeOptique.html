@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>SystemeOptique_Projet</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157529848-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-157529848-1');
+		</script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+								<li><a href="index.html">Mes projets</a></li>
+								<li><a href="aPropos.html">Mon profil</a></li>
+						</ul>
+						<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/maxime-gillot-6b0920179/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.com/Maxlo24" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.instagram.com/maxime_gt69" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+							</ul>
+					</nav>
+
+					<div id="BtnHautPage">
+						<a href="#main" class="button icon solid solo fa-arrow-up scrolly">Top</a>
+					</div>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+
+
+								<!-- Introduction  -->
+
+								<header class="major">
+									<span class="date">2017-2018</span>
+									<h1>simulateur de <br> système optique</h1>
+								</header>
+								<div class="image main"><img src="images/Programmation/SystemeOptique.jpg" alt="" /></div>
+								<p>Lors de mes études nous avons étudié les systèmes optiques à lentille mince. <br>
+                                    J'ai observé que notre professeur pouvait passer beaucoup de temps à tracer la trajectoire de la lumière à travers des lentilles minces. <br>
+                                    Le schéma pouvait manquer de précision et donc manquer de clarté. <br>
+                                    Il me semblait également interessant pédagogiquement de permettre aux étudiant d'expérimenter eux même différentes configuration de lentilles. <br>
+                                </p> <br>
+                                <p>C'est ainsi que m'est venu une idée : <br> <b>programmer un logiciel</b> qui permet de <b>simuler la trajectoire de la lumière</b> à travers un système optique personnalisable.</p>
+                                <br>
+                                <p>Le logiciel est téléchargeable <a href="https://github.com/Maxlo24/SystemeOptique" class="Hlink">ICI</a>.</p>
+                                <br><br>
+
+								<!-- Cahier des charges  -->
+
+								<header class="major">
+									<span class="date">1</span>
+									<h2>Le logiciel</h2>
+									<p>Architecture du logiciel.</p>
+								</header>
+								<p>
+									<b>Le le logiciel est composé de 3 fenètres :</b>
+									<br>
+									
+									<!-- Sommaire -->
+									• <a href="#Menu" class="scrolly">Un menu</a>  <br>
+									• <a href="#Schema" class="scrolly"> Un affichage du schéma</a><br>
+                                    • <a href="#Calcul" class="scrolly">Un affichage les résultats de calcul</a><br>
+                                    
+								</p><br><br>
+
+
+								<!-- Screenshot des différentes parties du site  -->
+
+								<header class="major">
+									<span class="date">2</span>
+									<h2>Architecture</h2>
+									<p>Présentation des différentes fenètres</p>
+									<br>
+                                    <h3><a id="Menu">Menu</a> </h3>
+                                    <div class="image main"><img src="images/Programmation/SOMenu.jpg" alt="Menu du logiciel" /></div>
+                                </header>
+                                <p><b>Le menu est divisé en 4 parties :</b> </p>
+                                <p>• <b>(1)</b> : On initialise ici la source lumineuse. <br>
+                                    La case échelle automatique permet de faire une mise à l'échelle du schéma pour que tout les éléments importants soient représentés <br>
+                                    Le bouton <b>Schema</b> permet d'afficher le tracé du système optique. <br>
+                                    Le bouton <b>Résultats</b> permet d'afficher le résultat des calculs.
+                                </p>
+                                <p>• <b>(2)</b> : On paramètre ici les lentilles minces à ajouter. <br>
+                                    On peut choisir d'afficher ou non les traits de construction des images de l'objet à travers la lentille.                                
+                                </p>
+                                <p>• <b>(3)</b> : On a ici une liste des différentes lentilles ajoutées. <br>
+                                    Il est possible de supprimer ou de modifier la lentille selectionnée.
+                                </p>
+                                <p>• <b>(4)</b> : Cette partie du menu n'est à modifier que si la case d'échelle automatique n'est pas cochée. <br>
+                                    Elle permet de faire une mise à l'échelle manuelle du schéma.
+                                </p>
+                                <br><br><br>
+                                <header class="major">
+									<h3><a id="Schema">Schéma</a></h3>
+									<div class="image main"><img src="images/Programmation/SOSchemaComplexe.jpg" alt="Page de réservation" /></div>
+                                </header>
+                                <p>Voici le <b>tracé</b> correspondant au menu précédent.</p>
+                                <p>On peut observer la variation d'épaisseur du faisseau lumineux lors de sa travrersée du système optique.</p>
+                                <p><i>(PS : l'image de sortie de ce système optique est à l'infini)</i></p>
+                                <br>
+                                <header class="major">
+									<h3><a id="Calcul">Calculs</a></h3>
+									<div class="image main"><img src="images/Programmation/SOResultComplexe.jpg" alt="Page espace client" /></div>
+                                </header>
+                                <p>Voici le <b>résultat</b> des différents calculs qui on permis le tracé du schéma.</p>
+                                <br>
+																
+                                </header>
+                                
+                                <header class="major">
+                                    <span class="date">3</span>
+                                    <h2>Résultats</h2>
+                                    <p>De quoi est capable le logiciel ?</p>
+                                    <br>
+                                    <div class="image main"><img src="images/Programmation/SOBasic.jpg" alt="Menu du logiciel" /><p>Systèmes optiques de base</p></div>
+                                </header>
+                                <p>Avec ce logiciel, il est possible de représenter tous les système optiques composé de 1 à 10 lentilles minces.</p>
+                                <p>C'est un <b>outil pédagogique</b> particulièrement éfficace pour aider à la compréhension de l'optique.</p>
+                                
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+						<section class="split contact">
+							<header class="major">
+								<span class="date" id="contact">contact</span>
+								<h1>Me contacter</h1>
+							</header>
+							<section class="alt">
+								<h3>Addresse</h3>
+								<p>Saint Genis les Ollières, 69290 <br>
+								France</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">+33 (0)7 81 17 52 42</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">maxime.gillot@cpe.fr</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/maxime-gillot-6b0920179/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/Maxlo24" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+					<header id="header">
+						<a href="index.html" class="logo">portfolio</a>
+					</header>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Maxime GILLOT</li><li>CSS & JS: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
