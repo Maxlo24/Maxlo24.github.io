@@ -7,159 +7,199 @@
 
 <html>
 	<head>
-		<title>Mes projets</title>
+		<title>My projects</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157529848-1"></script>
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157529848-1"></script>
 		<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 
 		gtag('config', 'UA-157529848-1');
+		</script> -->
+		<script
+		src="https://code.jquery.com/jquery-3.3.1.js"
+		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		crossorigin="anonymous">
 		</script>
+		<script>		
+		$(function(){
+			$("#contact_info").load("contact_info.html")
+		});</script>
 	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+		<div id="wrapper" class="fade-in">
+			<!-- Intro -->
+			<div id="intro">
+				<h1>Maxime<br>Gillot</h1>
+				
+				<ul class="actions">
+					<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Top</a></li>
+				</ul>
+			</div>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Mon<br>portfolio</h1>
-						
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Top</a></li>
-						</ul>
-					</div>
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">portfolio</a>
+			</header>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">portfolio</a>
-					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Mes projets</a></li>
-							<li><a href="aPropos.html">Mon profil</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/maxime-gillot-6b0920179/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
-							<li><a href="https://github.com/Maxlo24" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.instagram.com/maxime_gt69" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						</ul>
-					</nav>
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li class="active"><a href="index.html">My projects</a></li>
+					<li><a href="aboutme.html">About me</a></li>
+					<!-- <li><a></a></li> -->
+					<li><a href="indexFR.html">FR/EN</a></li>
+				</ul>
+				<ul class="icons">
 					
-					<div id="BtnHautPage">
-						<a href="#main" class="button icon solid solo fa-arrow-up scrolly">Continue</a>
-					</div>
-				<!-- Main -->
-					<div id="main">
+					<li><a href="https://www.linkedin.com/in/maxime-gillot-6b0920179/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+					<li><a href="https://github.com/Maxlo24" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://www.instagram.com/maxime_gt69" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+				</ul>
+			</nav>
 
-						<!-- Featured Post -->
+			<div id="BtnHautPage">
+				<a href="#main" class="button icon solid solo fa-arrow-up scrolly">Continue</a>
+			</div>
+			
+			<!-- Main -->
+				<div id="main">
 
-							<!-- Site web voyage  -->
+					<!-- Featured Post -->
 
-							<article class="post featured">
-								<header class="major">
-									<a href="projet_VoyageWebSite.html"><h1>Dernier projet</h1></a>
-									<span class="date">Projet étudiant</span>
-									<h2>Site web pour une agence de voyage</h2>
-									<p>L'objectif était de réaliser un prototypage de site web destiné à une agence de voyage fictive.</p>
+						<!-- Machine_Learning  -->
+
+						<article class="post featured">
+							<header class="major">
+								<a href="projet_Tree_generator.html"><h1>Last project</h1></a>
+								<span class="date"><p class="FR">Research scholar project</p><!-- <p class="EN">Study project</p>  --></span>
+								<h2>Machine Learning</h2>
+								<p>One year as a research scholar in <b>Deep Learning</b> for 3D craniofacial scan analysis.<br>
+									Working for the <b>University of Michigan</b> Orthodontic and Pediatric Dentistry Department.
+								</p>
+							</header>
+							<a href="projet_Tree_generator.html" class="image main"><img src="images/Machine_Learning/machine_learning.jpg" alt="Image logo Stomycare" /></a>
+							<ul class="actions special">
+								<li><a href="projet_Tree_generator.html" class="button fit">Learn more</a></li>
+							</ul>
+							<p><i>Python/Pytorch, Docker, GitHub, Slicer 3D, LateX, ITK-Snap, Blender 3D, Pack Office</i></p>
+						</article>
+
+						<!-- Posts -->
+						<section class="posts">
+
+							<!-- Tree_Generator  -->
+
+							<article>
+								<span class="date">Student project</span>
+								<header>
+									<h2><a href="projet_Tree_generator.html">Procedural tree<br />
+									Generator</a></h2>
 								</header>
-								<a href="projet_VoyageWebSite.html" class="image main"><img src="images/SiteVoyage/SiteWebVoyageMain.jpg" alt="Image site web" /></a>
+								<a href="projet_Tree_generator.html" class="image fit"><img src="images/Tree_Generator/Tree_generation.jpg" alt="Image de l'AI" /></a>
+								<p>Programming of a software in C++ to generate 3D models of tree using <b>Lindenmayer System</b>. </b> 
+								</p>
 								<ul class="actions special">
-									<li><a href="projet_VoyageWebSite.html" class="button fit">En savoir plus</a></li>
+									<li><a href="projet_Tree_generator.html" class="button fit">Learn more</a></li>
 								</ul>
+								<p><i>C++, Blender 3D</i></p>
 							</article>
 
-							<!-- Posts -->
-							<section class="posts">
+							<!-- Intelligence artificielles -->
 
-								<!-- Intelligence artificielles -->
+							<article>
+								<span class="date">Personal project</span>
+								<header>
+									<h2><a href="projet_IntelligenceArtificielle.html">Neural network and <br />
+									Genetic algorithm</a></h2>
+								</header>
+								<a href="projet_IntelligenceArtificielle.html" class="image fit"><img src="images/Genetic_Algorithme.jpg" alt="Image de l'AI" /></a>
+								<p>Programming of an <b>artificial intelligence</b> that learn to drive or arc in a virtual environment. </b> 
+								</p>
+								<ul class="actions special">
+								<li><a href="projet_IntelligenceArtificielle.html" class="button fit">Learn more</a></li>
+								</ul>
+								<p><i>Python, C#, Unity 3D, Blender 3D</i></p>
+							</article>
+							<!-- Modelisation 3D -->
 
-								<article>
-									<span class="date">Projet personnel</span>
+							<article>
+								<span class="date">Personal project</span>
+								<header>
+									<h2><a href="projet_Modelisation3D.html"><br/>3D
+									Modelisation</a></h2>
+								</header>
+								<a href="projet_Modelisation3D.html" class="image fit"><img src="images/Modelisation/Dragon_Image.jpg" alt="Image de l'AI" /></a>
+								<p>Modelisation of different <b>3D objects/models </b> . <br>
+									A variety of software were used.
+								</p>
+								<ul class="actions special">
+								<li><a href="projet_Modelisation3D.html" class="button fit">Learn more</a></li>
+								</ul>
+								<p><i>3D, SOLIDWORKS, Cinema 4D, Fusion 360</i></p>
+							</article>
+
+							<!-- Systeme optique -->
+
+							<article>
+									<span class="date">Student project</span>
 									<header>
-										<h2><a href="projet_IntelligenceArtificielle.html">Intelligence<br />
-										Artificielle</a></h2>
+										<h2><a href="projet_systemeOptique.html">Optical system<br> simulator</a></h2>
 									</header>
-									<a href="projet_IntelligenceArtificielle.html" class="image fit"><img src="images/Artificial_Neural_Network.jpg" alt="Image de l'AI" /></a>
-									<p>Programmation d'<b>intelligences artificielles</b>  qui apprennent à conduire ou à tirer à l'arc dans un environnement virtuel. Utilisation d'un<b> réseau de neurones </b>et d'un <b>algorithme génétique </b> 
-									</p>
+									<a href="projet_systemeOptique.html" class="image fit"><img src="images/Programmation/SystemeOptique.jpg" alt="Image systeme optique" /></a>
+									<p>Developement of a <b>optical system simulator</b> coded in <b>python</b>	</p>
 									<ul class="actions special">
-									<li><a href="projet_IntelligenceArtificielle.html" class="button fit">En savoir plus</a></li>
+									<li><a href="projet_systemeOptique.html" class="button fit">Learn more</a></li>
 									</ul>
+									<p><i>Python</i></p>
 								</article>
 
-								<!-- Modelisation 3D -->
 
-								<article>
-									<span class="date">Projet personnel</span>
-									<header>
-										<h2><a href="projet_Modelisation3D.html">Modélisation<br/>
-										3D</a></h2>
-									</header>
-									<a href="projet_Modelisation3D.html" class="image fit"><img src="images/Modelisation/Dragon_Image.jpg" alt="Image de l'AI" /></a>
-									<p>Modélisation de plusieurs <b>objets/modèls 3D</b> . <br>
-										Utilisation de nombreux logiciels
-									</p>
-									<ul class="actions special">
-									<li><a href="projet_Modelisation3D.html" class="button fit">En savoir plus</a></li>
-									</ul>
-								</article>
+							<!-- Site web -->
 
-								<!-- Création de logo -->
+							<!-- <article>
+								<span class="date">student project</span>
+								<header>
+									<h2><a href="projet_VoyageWebSite.html">Website</a></h2>
+								</header>
+								<a href="projet_VoyageWebSite.html" class="image fit"><img  src="images/SiteVoyage/SiteWebVoyageMain.jpg" alt="Image site web" /></a>
+								<p>Prototyping of a <b>website</b> for a fictitious travel agency. </b> 
+								</p>
+								<ul class="actions special">
+								<li><a href="projet_VoyageWebSite.html" class="button fit">Learn more</a></li>
+								</ul>
+							</article> -->
 
-								<article>
-									<span class="date">Projet professionnel</span>
-									<header>
-										<h2><a href="projet_Logo.html">Création de<br> Logo</a></h2>
-									</header>
-									<a href="projet_Logo.html" class="image fit"><img src="images/Logos/LogoFreelance.png" alt="Image de l'AI" /></a>
-									<p>Création de logo sur <a href="https://5euros.com/" class="Hlink">5euros.com</a> en freelance<br>
-										Utilisation de <b>Photoshop</b> et/ou <b>Blender 3D</b>.
-									</p>
-									<ul class="actions special">
-									<li><a href="projet_Logo.html" class="button fit">En savoir plus</a></li>
-									</ul>
-								</article>
+							<!-- Création de logo -->
 
-								
-								<!-- Systeme optique -->
+							<article>
+								<span class="date">Personal project</span>
+								<header>
+									<h2><a href="projet_Logo.html">Logo<br> Creation</a></h2>
+								</header>
+								<a href="projet_Logo.html" class="image fit"><img src="images/Logos/LogoFreelance.png" alt="Image de l'AI" /></a>
+								<p>Logo creation on <a href="https://5euros.com/" class="Hlink">5euros.com</a> in freelance<br>
+									Use of <b>Photoshop</b> and/or <b>Blender 3D</b>.
+								</p>
+								<ul class="actions special">
+								<li><a href="projet_Logo.html" class="button fit">Learn more</a></li>
+								</ul>
+								<p><i>Photoshop, Blender 3D, After Effect</i></p>
+							</article>
 
-								<article>
-										<span class="date">Projet personnel</span>
-										<header>
-											<h2><a href="projet_systemeOptique.html">Simulateur de<br> système optique</a></h2>
-										</header>
-										<a href="projet_systemeOptique.html" class="image fit"><img src="images/Programmation/SystemeOptique.jpg" alt="Image systeme optique" /></a>
-										<p>Création d'un logiciel de simulation de <b>système optique</b> codé en <b>python</b>	</p>
-										<ul class="actions special">
-										<li><a href="projet_systemeOptique.html" class="button fit">En savoir plus</a></li>
-										</ul>
-									</article>
-
-							</section>
-					</div>
+						
+						</section>
+				</div>
 
 				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/maxime-gillot-6b0920179/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
-									<li><a href="https://github.com/Maxlo24" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://www.instagram.com/maxime_gt69" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+					<div id="contact_info"></div>
 
 					<header id="header">
 						<a href="#top" class="logo">portfolio</a>
@@ -179,6 +219,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
 
 	</body>
 </html>
