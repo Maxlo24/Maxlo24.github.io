@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+
+<html>
+	<head>
+		<title>IA_Projectt</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157529848-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-157529848-1');
+		</script> -->
+		<script
+		src="https://code.jquery.com/jquery-3.3.1.js"
+		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		crossorigin="anonymous">
+		</script>
+		<script>		
+		$(function(){
+			$("#contact_info").load("contact_info.html")
+		});</script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper" class="fade-in">
+
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">portfolio</a>
+			</header>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li class="active"><a href="index.html">My projects</a></li>
+					<li><a href="aboutme.html">About me</a></li>
+					<!-- <li><a></a></li> -->
+					<li><a href="projet_IntelligenceArtificielle_FR.html">FR/EN</a></li>
+				</ul>
+				<ul class="icons">
+					
+					<li><a href="https://www.linkedin.com/in/maxime-gillot-6b0920179/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+					<li><a href="https://github.com/Maxlo24" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://www.instagram.com/maxime_gt69" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+				</ul>
+			</nav>
+
+			<div id="BtnHautPage">
+				<a href="#main" class="button icon solid solo fa-arrow-up scrolly">Continue</a>
+			</div>
+			
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+
+                                <!-- Introduction  -->
+                                
+                                <header class="major">
+                                    <span class="date">2018 - 2019</span>
+                                    <h1>Genetic algorithm and <br />
+                                        Neural network</h1>
+                                    <p>I've always been intrigued by the theme of <b>artificial intelligence</b>. It was in 2018 that I decided to learn more about it by
+                                        coding an AI that could <b>learn to drive</b> in a virtual environment.
+                                    </p>
+                                </header>
+                                
+                                <!-- Summary -->
+                                
+                                <p>All the following project used <a href="#AlgoGen" class="scrolly"><b>genetic algorithms</b></a>.<br>
+                                    I learned how to use them to train neural networks to perform the following tasks.<br>
+                                    • <a href="#IA2" class="scrolly">"Learn" to shoot arrows</a><br>
+                                    • <a href="#IA1" class="scrolly">"Learn" to drive</a><br>
+                                </p>
+                                <p>The AIs were coded in the <a href="https://unity.com/fr"><b class="Hlink">Unity 3D</b></a> graphics engine using <b>C#</b>.</p>
+                                <br>
+
+                                <!-- Genetic Algorithm -->
+
+                                <header class="major">
+                                    <a id="AlgoGen"></a>
+                                    <span class="date">Genetic Algorithm</span>
+                                    <h2>Genetic</h2><h2>Algorithm</h2>
+                                    <p>I first coded my first genetic algorithm in <b>Python</b>. The goal was to solve the traveling salesman problem:<br>
+                                        • Determine the shortest path that visits each city only once<br>and ends in the starting city.
+                                    </p>
+                                </header>
+
+                                <div class="image main"><img src="images/IA/ExplicationAlgoGen.jpg" alt="Robot Image" /></div>
+
+                                <!-- Image Description -->
+
+                                <p>
+                                    • <b>Block (A)</b> represents the progress of the algorithm at various key moments.<br>
+                                    We start by creating a point cloud: 15 points randomly placed on a 10x10 pixel grid.
+                                    The genetic algorithm begins by creating an initial population, in this case, a population of 100 routes.
+                                    <br><br>
+                                    • <b>Block (B)</b> corresponds to the description of these routes. They are all characterized by a list of points whose order is randomly determined. This list of points corresponds to the DNA of a route.
+                                    <br>
+                                    To adhere to <b>Charles Darwin's theory of evolution</b>, we now proceed to natural <b>selection</b>. To do this, we rank the routes based on their length. The shorter the route, the higher it ranks.
+                                    <br>
+                                    Now that our initial population is ranked, we select the top 25 routes. For more diversity, and once again taking inspiration from nature, we also select 25 lucky ones. These 25+25 selected routes will now be able to "reproduce."
+                                    <br><br>
+                                    • <b>Block (C)</b> represents the <b>reproduction</b> process, which involves choosing two "selected" routes (a father and a mother) and mixing their DNA to produce 4 new routes (4 children).
+                                    The goal is to maintain a constant population (here, 100). Finally, a slight <b>mutation</b> is added to the DNA of the "children."
+                                    <br><br>
+                                    This process of <b>selection</b>/<b>reproduction</b>/<b>mutation</b> is repeated until there is no further improvement.
+                                </p>
+                                <br><br><br>
+
+                                <!-- AI learns archery -->
+
+                                <header class="major">
+                                    <a id="IA2"></a>
+                                    <span class="date">AI 1</span>
+                                    <h2>Learn to</h2><h2>Shoot Arrows</h2>
+                                    <p>Screenshots from the project in <a href="https://unity.com/fr"><b class="Hlink">Unity 3D</b></a>:</p>
+                                </header>
+                                <p>The goal was to teach an AI how to shoot arrows.<br>
+                                    I wanted it to always hit its target from 10m to 80m away, regardless of the wind's strength and direction.
+                                </p>
+                                <header class="major">
+                                    <h3>Environment</h3>
+                                    <div class="image main"><div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/388463793?byline=0&portrait=0&loop=1&autoplay=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script><p>Modeling and control of the archer robot</p></div>
+                                    <div class="image main"><img src="images/IA/arcEnvironement.jpg" alt="Unity environment modeling" /><p>Modeling the environment in Unity</p></div>
+                                </header>
+                                <p>
+                                    The robot is equipped with a neural network similar to this one:
+                                    <img src="images/IA/NeuralNetwork.jpg" alt="Neural Network"><br>
+                                    <b>Description of inputs:</b> <br>
+                                    • <b>x1</b>: corresponds to the position along the x-axis of the target<br>
+                                    • <b>x2</b>: corresponds to the position along the y-axis of the target<br>
+                                    • <b>x3</b>: corresponds to the wind's strength along the x-axis<br>
+                                    • <b>x4</b>: corresponds to the wind's strength along the y-axis<br><br>
+                                    <b>Description of outputs:</b> <br>
+                                    • <b>y1</b>: Vertical rotation of the bow<br>
+                                    • <b>y2</b>: Horizontal rotation of the bow<br>
+                                    • <b>y3</b>: Power of the shot<br>
+                                </p>
+                                <p>We will train this neural network following the same principle as presented in the <a href="#AlgoGen" class="scrolly"><b>genetic algorithms</b></a> section.</p>
+                                <br>
+                                <header class="major">
+                                    <h3>Results</h3>
+                                </header>
+                                <div class="image main"><img src="images/IA/Arc1gen1.jpg" alt="First generation. Shots are completely random"/><p>First generation. Shots are completely random</p></div>
+                                <div class="image main"><img src="images/IA/Arc1gen5.jpg" alt="After 5 generations. Concentration of shots observed"/><p>After 5 generations. Concentration of shots observed</p></div>
+                                <div class="image main"><img src="images/IA/Arc1gen25.jpg" alt="After 25 generations. Some neural networks achieve satisfactory results and hit the target"/><p>After 25 generations. Some neural networks achieve satisfactory results and hit the target</p></div>
+                                <p>The experiment was then conducted with randomly positioned targets. The results are not yet conclusive enough.<br>
+                                    The computing power at my disposal is not sufficient for efficient progress on this project. And it seems that a genetic algorithm is not the best solution for this problem.
+                                </p><br><br><br>
+
+                                <!-- AI learns to drive -->
+
+                                <header class="major">
+                                    <a id="IA1"></a>
+                                    <span class="date">AI 2</span>
+                                    <h2>Learn to </h2><h2>Drive</h2>
+                                    <p>Excerpt from a project presentation:</p>
+                                </header>
+                                <p>The goal was to teach an AI to complete a circuit as quickly as possible without colliding with the environment.<br>
+                                    I wanted to see if it was possible to use AI to find the optimal path.
+                                </p><br><br>
+                                <header class="major">
+                                    <h3>Environment</h3>
+                                    <div class="image main"><img src="images/IA/Environement.jpg" alt="Environment Image" /></div>
+                                </header>
+                                <p>
+                                    First, I coded a scene in Unity where it is possible to <b>draw the circuit</b> you want.<br>
+                                    The circuit must include at least:<br>
+                                    • a starting point<br>
+                                    • walls that form a closed circuit<br>
+                                    • Checkpoints (the last checkpoint corresponds to the finish line)<br>
+                                </p><br><br>
+                                <header class="major">
+                                    <h3>Neural Network</h3>
+                                    <div class="image main"><img src="images/IA/CarCreation.jpg" alt="Omnidirectional wheel Image" /></div>
+                                </header>
+                                <p>
+                                    Next, I coded a second scene in which you can create your vehicle, but most importantly, <b>customize the associated neural network (NN)</b>.<br>
+                                    You can choose:<br>
+                                    • the <b>number of inputs</b> (1 - 6). These are the vehicle's distance sensors.<br>
+                                    • the <b>number of hidden layers</b> (0 - 3). These are layers of neurons between the input and output of the NN.<br>
+                                    • the <b>number of neurons per hidden layer</b> (1 - 5)<br>
+                                </p><br><br>
+                                <header class="major">
+                                    <h3>Genetic Algorithm</h3>
+                                    <div class="image main"><img src="images/IA/Learning.jpg" alt="Omnidirectional wheel Image" /></div>
+                                </header>
+                                <p>
+                                    It is now time to code the "learning" part using a <b>genetic algorithm</b>:<br>
+                                    <br>
+                                    • Our initial population consists of 100 cars equipped with their neural networks.<br>
+                                    They are all sent onto the circuit where they try to go as far as possible.<br>
+                                    Once they have all either completed the circuit or collided with a wall, they are ranked by their score.<br>
+                                    (the score is calculated based on time and distance traveled).<br>
+                                    <br>
+                                    • We can now proceed with <b>selection</b>, <b>reproduction</b>, and <b>mutation</b> following the same principle as presented in the <a href="#AlgoGen" class="scrolly"><b>genetic algorithms</b></a> section.<br>
+                                    <br>
+                                    <i>(Ps: In the center of the slide, the red lines correspond to the sensors of the cars)</i>
+                                </p><br><br>
+                                <header class="major">
+                                    <h3>Results</h3>
+                                    <div class="image main"><img src="images/IA/Result.jpg" alt="Result Image" /></div>
+                                </header>
+                                <p>
+                                    Above, we can observe the evolution of the AI after 100 generations.<br>
+                                    Many cars reach the end of the circuit, and some do so much faster than others.<br>
+                                    <br>
+                                    <b>Observations</b>: It is possible to save the values of the best car's NN.<br>
+                                    When you place this car on a completely unfamiliar circuit, it easily completes it.<br>
+                                    <br>
+                                    <b>In a way, the car has "learned" to drive.</b>
+                                </p><br><br><br>
+
+
+							</section>
+					</div>
+
+				<!-- Footer -->
+				<div id="contact_info"></div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Maxime GILLOT</li><li>CSS & JS: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
