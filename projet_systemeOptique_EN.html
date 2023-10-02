@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+
+<html>
+	<head>
+		<title>Optical system</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157529848-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-157529848-1');
+		</script>
+		<script
+		src="https://code.jquery.com/jquery-3.3.1.js"
+		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		crossorigin="anonymous">
+		</script>
+		<script>		
+		$(function(){
+			$("#contact_info").load("contact_info.html")
+		});</script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper" class="fade-in">
+
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">portfolio</a>
+			</header>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+                    <li style="background-color: rgba(39, 39, 39, 0.5);"><a href="projet_systemeOptique_FR.html">FR/EN</a></li>
+                    <li><a href="index.html">My projects</a></li>
+                    <li><a href="aboutme.html">About me</a></li>
+                    <li><a href="services_EN.html">Services</a></li>
+				</ul>
+                <ul class="icons">
+					<li><a href="https://www.linkedin.com/in/maxime-gillot-6b0920179/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+					<li><a href="https://github.com/Maxlo24" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://www.instagram.com/maxime_gt69" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="https://www.youtube.com/@maximeg3178/videos" class="icon brands alt fa-youtube"><span class="label">youtube</span></a></li>
+				</ul>
+			</nav>
+
+			<div id="BtnHautPage">
+				<a href="#main" class="button icon solid solo fa-arrow-up scrolly">Continue</a>
+			</div>
+			
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+
+                                <!-- Introduction  -->
+                                
+                                <header class="major">
+                                    <span class="date">2017-2018</span>
+                                    <h1>Optical System <br> Simulator</h1>
+                                </header>
+                                <div class="image main"><img src="images/Programmation/SystemeOptique.jpg" alt="" /></div>
+                                <p style="text-align: justify;">During my studies, we examined <b>thin lens optical systems</b>. 
+                                    I noticed that our professor could spend a lot of time drawing the path of light through the lenses. 
+                                    The diagram could lack precision and therefore clarity. 
+                                    It also seemed pedagogically interesting to allow students to experiment with different lens configurations themselves. 
+                                </p> 
+                                <p style="text-align: justify;">That's when I came up with an idea to <b>program a software</b> that allows you to <b>simulate the path of light</b> through a customizable optical system.</p>
+                                <br>
+                                <!-- <p>The software is downloadable <a href="https://github.com/Maxlo24/SystemeOptique" class="Hlink">HERE</a>.</p> -->
+                                <br><br>
+                                
+                                <!-- Specifications -->
+                                
+                                <header class="major">
+                                    <span class="date">1</span>
+                                    <h2>The Software</h2>
+                                    <p>Software Architecture.</p>
+                                </header>
+                                <p>
+                                    <b>The software consists of 3 windows:</b>
+                                    <br>
+                                
+                                    <!-- Table of Contents -->
+                                    • <a href="#Menu" class="scrolly">A menu</a> <br>
+                                    • <a href="#Schema" class="scrolly">A display of the diagram</a><br>
+                                    • <a href="#Calcul" class="scrolly">A display of calculation results</a><br>
+                                
+                                </p><br><br>
+                                
+                                <!-- Screenshots of Different Parts of the Software -->
+                                
+                                <header class="major">
+                                    <span class="date">2</span>
+                                    <h2>Architecture</h2>
+                                    <p>Presentation of the different windows</p>
+                                    <br>
+                                    <h3><a id="Menu">Menu</a> </h3>
+                                    <div class="image main"><img src="images/Programmation/SOMenu.jpg" alt="Software Menu" /></div>
+                                </header>
+                                <p><b>The menu is divided into 4 parts:</b> </p>
+                                <p>• <b>(1)</b>: Here, we initialize the light source. <br>
+                                    The automatic scale box allows you to scale the diagram so that all important elements are represented. <br>
+                                    The <b>Diagram</b> button displays the optical system's trace. <br>
+                                    The <b>Results</b> button displays the calculation results.
+                                </p>
+                                <p>• <b>(2)</b>: Here, we set the thin lenses to add. <br>
+                                    You can choose whether to display the construction lines of the object's images through the lens.
+                                </p>
+                                <p>• <b>(3)</b>: Here, we have a list of the different added lenses. <br>
+                                    It is possible to delete or modify the selected lens.
+                                </p>
+                                <p>• <b>(4)</b>: This part of the menu only needs to be modified if the automatic scale box is unchecked. <br>
+                                    It allows for manual scaling of the diagram.
+                                </p>
+                                <br><br><br>
+                                <header class="major">
+                                    <h3><a id="Schema">Diagram</a></h3>
+                                    <div class="image main"><img src="images/Programmation/SOSchemaComplexe.jpg" alt="Reservation Page" /></div>
+                                </header>
+                                <p>Here is the <b>plot</b> corresponding to the previous menu.</p>
+                                <p>We can observe the variation in the thickness of the light beam as it passes through the optical system.</p>
+                                <p><i>(PS: The output image of this optical system is at infinity)</i></p>
+                                <br>
+                                <header class="major">
+                                    <h3><a id="Calcul">Calculations</a></h3>
+                                    <div class="image main"><img src="images/Programmation/SOResultComplexe.jpg" alt="Client Area Page" /></div>
+                                </header>
+                                <p>Here is the <b>result</b> of the various calculations that allowed the diagram to be plotted.</p>
+                                <br><br><br><br>
+                                </header>
+                                
+                                <header class="major">
+                                    <span class="date">3</span>
+                                    <h2>Results</h2>
+                                    <p>What is the software capable of?</p>
+                                    <br>
+                                    <div class="image main"><img src="images/Programmation/SOBasic.jpg" alt="Software Menu" /><p>Basic optical systems</p></div>
+                                </header>
+                                <p style="text-align: justify;">With this software, it is possible to represent all optical systems composed of 1 to 10 thin lenses.
+                                It is a particularly effective <b>educational tool</b> to aid in the understanding of optics.
+                                My physics teacher at the time was particularly interested in this project and obtained a copy of the software.</p>
+							</section>
+					</div>
+
+				<!-- Footer -->
+				<div id="contact_info"></div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Maxime GILLOT</li><li>CSS & JS: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
